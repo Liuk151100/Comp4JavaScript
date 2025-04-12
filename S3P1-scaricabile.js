@@ -57,17 +57,15 @@ console.log(upperFirst())
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
-//DA RIVEDERE. DEVO FARE IN MODO CHE NELL'ARRAY CHE FACCIO TORNARE INDIETRO, CI SIANO TUTTI I NUMERI RANDOM
 function giveMeRandom(n) {
+    let numeriRandom = []
     for (let i = 0; i <= n; i++) {
         let numeroRandom = Math.floor(Math.random() * 11)
-        let numeriRandom = []
         numeriRandom.push(numeroRandom)
         if (i == n) {
             return numeriRandom
         }
     }
-    
 }
 console.log(giveMeRandom(20))
 
